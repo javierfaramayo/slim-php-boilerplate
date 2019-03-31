@@ -77,10 +77,11 @@ EMAIL_PORT=587 <-- The port to send emails
 
 EMAIL_TOKEN_EXPIRATION_TIME=1440 <-- Time to expiration of your JSON WEB TOKENS in minutes
 ```
+3. Rename file ".env.example" to ".env".
 
-3. Run the database script (`db.sql` at root folder) on your phpmyadmin or on any tool that you use for your database.
+4. Run the database script (`db.sql` at root folder) on your phpmyadmin or on any tool that you use for your database.
 
-4. Install the dependencies of the project using
+5. Install the dependencies of the project using
 ```
 composer install
 ```
@@ -91,6 +92,8 @@ composer install
 ## Verifications before running
 
 - Sometimes email shields of Antivirus blocks the port to send mails and PhpMailer can't send. If this happens you must deactivate email shield from your antivirus or check for another application that is blocking email output.
+
+- If you will use your Gmail to send mails you have to configure your account to allow this. Go to your Google account's settings > Security > Access for unsafe applications (or something like that) > Allow access.
 
 - Check if the folder's structure in your downloaded project is ok to avoid errors in the execution. You can see that at the end of this page.
 
