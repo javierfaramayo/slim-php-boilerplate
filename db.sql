@@ -42,7 +42,7 @@ CREATE TABLE IF NOT EXISTS `test`.`status` (
   PRIMARY KEY (`id`),
   UNIQUE INDEX `status_UNIQUE` (`status` ASC))
 ENGINE = InnoDB
-AUTO_INCREMENT = 4
+AUTO_INCREMENT = 1
 DEFAULT CHARACTER SET = utf8;
 
 INSERT INTO `test`.`status` VALUES (null, 'Active'), (null, 'Blocked'), (null, 'Deleted');
@@ -69,7 +69,7 @@ CREATE TABLE IF NOT EXISTS `test`.`users` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
-AUTO_INCREMENT = 1501
+AUTO_INCREMENT = 1
 DEFAULT CHARACTER SET = utf8;
 
 
