@@ -77,10 +77,11 @@ EMAIL_PORT=587 <-- The port to send emails
 
 EMAIL_TOKEN_EXPIRATION_TIME=1440 <-- Time to expiration of your JSON WEB TOKENS in minutes
 ```
+3. Rename file ".env.example" to ".env".
 
-3. Run the database script (`db.sql` at root folder) on your phpmyadmin or on any tool that you use for your database.
+4. Run the database script (`db.sql` at root folder) on your phpmyadmin or on any tool that you use for your database.
 
-4. Install the dependencies of the project using
+5. Install the dependencies of the project using
 ```
 composer install
 ```
