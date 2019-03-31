@@ -1,0 +1,62 @@
+html,
+body,
+header,
+.view {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.btn-rounded{
+  border-radius: 10em;
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 1000px;
+  }
+}
+@media (min-width: 800px) and (max-width: 850px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 600px;
+  }
+}
+
+.btn .fa {
+  margin-left: 3px;
+}
+
+.top-nav-collapse {
+  background-color: #424f95 !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #424f95 !important;
+  }
+}
+
+.btn-white {
+  color: black !important;
+}
+
+h6 {
+  line-height: 1.7;
+}
+
+.rgba-gradient {
+background: #373B44;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4489f7b6, rgba(55, 59, 68, 0.699));  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4286f4b9, rgba(55, 59, 68, 0.733)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}

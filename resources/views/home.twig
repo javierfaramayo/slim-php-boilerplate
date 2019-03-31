@@ -1,0 +1,12 @@
+{% extends "layouts/base.twig" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block body %}
+
+<div class="row justify-content-center align-items-center mt-5 white-text">
+  <h1>Hi {{ session.name }} {{ session.last_name }} !</h1>
+</div>
+<div class="row justify-content-center white-text"><h2>Welcome to {{ appName }} homepage</h2></div>
+
+{% endblock %}

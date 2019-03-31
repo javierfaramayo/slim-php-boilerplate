@@ -1,0 +1,60 @@
+{% extends "layouts/base.twig" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block body %}
+
+<div class="row justify-content-center align-items-center" style="height: 100%">
+  <div class="col-xs-12 col-lg-5 col-md-6">
+
+    <div class="card">
+
+      <h5 class="card-header info-color white-text text-center py-4">
+        <strong>Sign in</strong>
+      </h5>
+
+      <div class="card-body px-lg-5 pt-0">
+
+        <form class="text-center" style="color: #757575;" method="POST" action="{{ path_for('signin.exec') }}">
+
+          {% if success_message %}
+            {% include "components/success.twig" %}
+          {% endif %}
+
+          {% if error_message %}
+            {% include "components/errors.twig" %}
+          {% endif %}
+
+          <div class="md-form">
+            <input type="email" id="email" class="form-control" name="email" value="{% if error_message %}{{ old_fields.email }}{% endif %}" required>
+            <label for="email">E-mail</label>
+          </div>
+
+          <div class="md-form">
+            <input type="password" id="pass" class="form-control" name="pass" required>
+            <label for="pass">Password</label>
+          </div>
+
+          {{ csrf_field() | raw }}
+
+          <div class="d-flex justify-content-around">
+            <div>
+              <a href="{{ path_for('forgotpass.show') }}">Forgot password?</a>
+            </div>
+          </div>
+
+          <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Sign
+            in</button>
+
+          <p>Don't have an account?
+            <a href="{{ path_for('signup.show') }}">Sign Up</a>
+          </p>
+
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}
